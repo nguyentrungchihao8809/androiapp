@@ -4,10 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -30,32 +28,23 @@ fun ThucHanh02() {
     var message by remember { mutableStateOf("") }
     var messageColor by remember { mutableStateOf(Color.Red) }
 
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(20.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
-        // Tiêu đề
+    Column() {
         Text(
             text = "Thực hành 02",
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(bottom = 20.dp)
+            modifier = Modifier
+                .padding(bottom = 20.dp)
         )
-
-        // Ô nhập email
         OutlinedTextField(
             value = email,
             onValueChange = { email = it },
             label = { Text("Email") },
+            singleLine = true,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(bottom = 8.dp)
         )
-
-        // Thông báo lỗi hoặc hợp lệ
         if (message.isNotEmpty()) {
             Text(
                 text = message,
@@ -64,8 +53,6 @@ fun ThucHanh02() {
                 modifier = Modifier.padding(bottom = 10.dp)
             )
         }
-
-        // Nút kiểm tra
         Button(
             onClick = {
                 val input = email.text.trim()
@@ -80,7 +67,7 @@ fun ThucHanh02() {
                     }
                     else -> {
                         message = "Bạn đã nhập email hợp lệ"
-                        messageColor = Color(0xFF2E7D32) // xanh lá
+                        messageColor = Color(0xFF2E7D32)
                     }
                 }
             },
