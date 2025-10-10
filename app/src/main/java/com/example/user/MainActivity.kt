@@ -29,8 +29,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.clickable
 import android.content.Intent
 import androidx.compose.ui.platform.LocalContext
-
-
+import com.example.baitap_tuan2.BaiTapTuan2UI
+import com.example.baitap_tuan2.ThucHanh02
 
 
 class MainActivity : ComponentActivity() {
@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MaterialTheme {
-                Greeting()
+                ThucHanh02()
         }
         }
     }
