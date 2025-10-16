@@ -78,12 +78,10 @@ fun  TextScreen(modifier: Modifier = Modifier.fillMaxSize()) {
         Text( text = buildAnnotatedString {
             append("The ")
 
-            // Gạch ngang (strike-through)
             withStyle(style = SpanStyle(textDecoration = TextDecoration.LineThrough)) {
                 append("quick ")
             }
 
-            // Chữ nâu (màu nâu và in đậm)
             withStyle(
                 style = SpanStyle(
                     color = Color(0xFF8B4513), // nâu
@@ -95,7 +93,6 @@ fun  TextScreen(modifier: Modifier = Modifier.fillMaxSize()) {
 
             append("fox j u m p s ")
 
-            // Chữ in nghiêng, đậm
             withStyle(
                 style = SpanStyle(
                     fontStyle = FontStyle.Italic,
@@ -107,7 +104,6 @@ fun  TextScreen(modifier: Modifier = Modifier.fillMaxSize()) {
 
             append("the ")
 
-            // Chữ nghiêng + gạch chân
             withStyle(
                 style = SpanStyle(
                     fontStyle = FontStyle.Italic,

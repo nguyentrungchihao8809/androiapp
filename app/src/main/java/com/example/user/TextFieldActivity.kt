@@ -73,7 +73,7 @@ fun  TextFieldScreen(modifier: Modifier = Modifier.fillMaxSize()) {
                 .border(
                     width = 2.dp,
                     color = Color.Black,
-                    shape = RoundedCornerShape(10.dp) // viền vuông bo góc nhẹ
+                    shape = RoundedCornerShape(10.dp)
                 )
                 .padding(8.dp)
                 .clickable{
