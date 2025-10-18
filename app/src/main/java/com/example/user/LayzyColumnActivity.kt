@@ -47,20 +47,16 @@ fun LayzyScreen() {
 //    Column {
 //        for (line in arr) {
 //            Text(
-//                text = line,
-//                modifier = Modifier
-//                    .fillMaxWidth()
-//                    .padding(4.dp)
+//                text = line
+//
+//
 //            )
 //        }
 
     LazyColumn {
         items(arr) { line ->
             Text(
-                text = line,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(4.dp)
+                text = line
             )
         }
     }
