@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "3152462339",
+    "project_id": "btuan4-ba2e7",
+    "storage_bucket": "btuan4-ba2e7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3152462339:android:dc302c29da55464b1dc436",
+        "android_client_info": {
+          "package_name": "com.example.btuan4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3152462339-3at57emgebt57v844mg2eoe4rclg9s6e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.btuan4",
+            "certificate_hash": "cf74825064b15bcfe91935271ae7442509ff0eb0"
+          }
+        },
+        {
+          "client_id": "3152462339-mo3hv4rkr9ou466f58ng7pjvj5r54am3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6rNlOm3zOtEs2G4y16B3V_rMbbSTqeP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3152462339-mo3hv4rkr9ou466f58ng7pjvj5r54am3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
